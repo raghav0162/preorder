@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<style>
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: 
+    
+    url('https://jolttx.com/wp-content/uploads/2019/01/istockphoto-601370366-612x612.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8.4px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: blue;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1 style="text-shadow: 0.5px, 0.4px; text-align:center; color: #99B898;">Pre-orders</h1>
+    <p style="text-shadow: 0.5px, 0.4px; text-align:center; color:white;">A little from you </p>
+    <hr>
+
+    <label for="email"><b style="text-shadow: 0.5px, 0.4px; text-align:center; color:white;">Quality and Taste</b></label>
+    <input type="text" placeholder="how you want it " name="email" required>
+
+    <label for="psw"><b style="text-shadow: 0.5px, 0.4px; text-align:center; color:white;">Area</b></label>
+    <input type="password" placeholder="Enter your location" name="psw" required>
+    <label for="psw"><b style="text-shadow: 0.5px, 0.4px; text-align:center; color:white;">Mobile Number</b></label>
+    <input type="password" placeholder="Enter your number" name="psw" required>
+
+    <label for="psw-repeat"><b style="text-shadow: 0.5px, 0.4px; text-align:center; color:white;">Quantity</b></label>
+    <input type="password" placeholder="400-%$" name="psw-repeat" required>
+    
+   
+   
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">PREPLACE
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
